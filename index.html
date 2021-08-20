@@ -11,16 +11,60 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: white; }
   </style>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="theme.css">
+
 </head>
 <body>
 
+  <main>
+    <div id="top">
+      <h1 id="title">calc</h1>
+      <div id="theme">
+        <p id="theme-text">THEME</p>
+        <div id="theme-toggle"><span id="theme-toggle-circle"></div> 
+      </div>
+    </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div id="display">
+      <div id="result">0</div>
+    </div>
+
+    <div id="buttons">
+      <div class="btn" id="b7">7</div>
+      <div class="btn" id="b8">8</div>
+      <div class="btn" id="b9">9</div>
+      <div class="btn" id="DEL">DEL</div>
+      <div class="btn" id="b4">4</div>
+      <div class="btn" id="b5">5</div>
+      <div class="btn" id="b6">6</div>
+      <div class="btn" id="plus">+</div>
+      <div class="btn" id="b1">1</div>
+      <div class="btn" id="b2">2</div>
+      <div class="btn" id="b3">3</div>
+      <div class="btn" id="minus">-</div>
+      <div class="btn" id="point">.</div>
+      <div class="btn" id="b0">0</div>
+      <div class="btn" id="divide">/</div>
+      <div class="btn" id="multiply">x</div>
+      <div class="btn" id="RESET">RESET</div>
+      <div class="btn" id="equal">=</div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      <p id="attribution-text">Challenge by <a class="attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>
+      Coded by <a class="attribution-link" href="https://github.com/iulian-cenusa"> Iulian Cenuşă</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
 </body>
 </html>

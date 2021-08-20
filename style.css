@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 32px;
+    font-family: 'Spartan', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(222, 26%, 31%);
+}
+
+#top , #display , #buttons {
+    width: 100%;
+}
+#display, #buttons{
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#top{
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 0 0.5em 0;
+}
+
+#top h1{
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#top p{
+    color: white;
+    font-weight: 700;
+    font-size: 0.5em;
+}
+
+#display{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+}
+
+#result{
+    color: white;
+    padding: 0.5em 0 0.5em 0;
+    text-align: right;
+}
+
+#buttons{
+    display: grid;
+    grid-template-areas: 'b7 b8 b9 DEL'
+    'b4 b5 b6 plus'
+    'b1 b2 b3 minus'
+    'point b0 div mul'
+    'RESET RESET eq eq';
+    gap: 20px;
+    background-color: hsl(223, 31%, 20%);
+    margin: 1em 0 1em 0;
+    padding: 1em;
+    justify-items: center;
+    justify-content : center;
+    border-radius: 10px;
+}
+
+@media (min-width: 375px) {
+    main{
+        width: 340px;
+    }
+}
